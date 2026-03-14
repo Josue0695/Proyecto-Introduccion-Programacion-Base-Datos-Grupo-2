@@ -1,0 +1,125 @@
+Moverse al folder para user de repositorio:
+
+$ cd "C:\Users\lumenahe\OneDrive - Microsoft\Documents\Uni\Introduccion a la programacion\Proyecto Grupo 2\Proyecto Bases de Datos"
+
+
+
+Inicializarlo
+
+$ git init
+
+Revisar status de archivos:
+
+$ git status
+
+
+Agregar todos los archivos:
+
+$ git add .
+
+Realizar Commit de los archivos:
+
+$ git commit "3er commit"
+
+Configurar datos:
+
+$ git config --global user.name "Luis Mena"
+$ git configt --global user.mail "lumenahe@microsoft.com"
+
+Agregar repositorio remoto:
+
+$ git remote add origin https://github.com/Josue0695/Proyecto-Introduccion-Programacion-Base-Datos-Grupo-2.git
+
+Ubicarse en una rama para este repositorio:
+
+$ git branch -m main
+
+
+Clonarlo para mantener limpieza y seguridad:
+
+
+$ git clone Josue0695/Proyecto-Introduccion-Programacion-Base-Datos-Grupo-2.git
+
+Navegar a la ubicacion del Proyecto:
+
+$ cd Proyecto-Introduccion-Programacion-Base-Datos-Grupo-2/
+
+Confirmar repositorio esta configurado:
+
+$ git remote -v
+origin  https://github.com/Josue0695/Proyecto-Introduccion-Programacion-Base-Datos-Grupo-2.git (fetch)
+origin  https://github.com/Josue0695/Proyecto-Introduccion-Programacion-Base-Datos-Grupo-2.git (push)
+
+Configurar un Upstream para el repositorio:
+
+$ git remote add upstream https://github.com/Josue0695/Proyecto-Introduccion-Programacion-Base-Datos-Grupo-2.git
+
+Validar:
+
+$ git remote -v
+origin  https://github.com/Josue0695/Proyecto-Introduccion-Programacion-Base-Datos-Grupo-2.git (fetch)
+origin  https://github.com/Josue0695/Proyecto-Introduccion-Programacion-Base-Datos-Grupo-2.git (push)
+upstream        https://github.com/Josue0695/Proyecto-Introduccion-Programacion-Base-Datos-Grupo-2.git (fetch)
+upstream        https://github.com/Josue0695/Proyecto-Introduccion-Programacion-Base-Datos-Grupo-2.git (push)
+
+Moverse a rama Nueva para este edit:
+
+$ git checkout -b luisfase1
+Switched to a new branch 'luisfase1'
+
+
+Realizar cambios en la carpeta con los archivos a modificar y revisar su estado:
+
+$ git status
+On branch luisfase1
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ProyectoBasesDeDatos_Fase1_Grupo2.docx
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Agregar todos los archivos:
+
+$ git add .
+
+Hacer commit de esta rama:
+
+$ git commit -m "Fase1edit"
+[luisfase1 (root-commit) 9a956a6] Fase1edit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 ProyectoBasesDeDatos_Fase1_Grupo2.docx
+
+
+Mover al repositorio remoto en rama nueva:
+
+$ git push origin luisfase1
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 13.23 KiB | 6.61 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Josue0695/Proyecto-Introduccion-Programacion-Base-Datos-Grupo-2.git
+ * [new branch]      luisfase1 -> luisfase1
+
+Validar archivos en sincronizacion:
+
+$ git ls-tree -r origin/luisfase1 --name-only
+ProyectoBasesDeDatos_Fase1_Grupo2.docx
+
+
+
+
+
+
+
+
+
+
+
+
+
